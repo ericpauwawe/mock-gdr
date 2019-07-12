@@ -5,7 +5,7 @@ ARG hostname=localhost
 ARG port=14141
 ARG queue_manager=QLSP001D
 ARG channel=QLSP001D.APPLI.CHL
-ARG with_null_character=false
+ARG with_null_character=true
 ARG queue_to_watch=APP.SP.GDR.QR
 
 ADD mq-responder-$version.jar /
