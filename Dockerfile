@@ -10,4 +10,4 @@ ARG queue_to_watch=APP.SP.GDR.QR
 
 ADD mq-responder-$version.jar /
 RUN mv mq-responder-$version.jar mock_gdr.jar
-ENTRYPOINT java -jar mock_gdr.jar $hostname $port $queue_manager $channel " " " " " " $with_null_charcater $queue_to_watch
+ENTRYPOINT java -jar mock_gdr.jar $hostname $port $queue_manager $channel "" "" "" $with_null_character $queue_to_watch
