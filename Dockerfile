@@ -11,4 +11,4 @@ ARG headers=
 ARG with_null_character=false
 ADD mq-responder-$version.jar /
 RUN mv mq-responder-$version.jar mock_gdr.jar
-ENTRYPOINT java -jar mock_gdr.jar $hostname $port $queue_manager $channel $username $password $headers $with_null_charcater =
+ENTRYPOINT java -jar mock_gdr.jar $hostname $port $queue_manager $channel $username $password $headers $with_null_charcater
